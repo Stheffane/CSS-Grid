@@ -7,7 +7,9 @@
 }
 
 img {
+  display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 /* GRID GERAL */
@@ -83,14 +85,30 @@ img {
   background: #b07dfb;
 }
 
+/* CONTENT */
 .content {
   grid-area: content;
 }
 
+/* ANUNCIOS */
 .anuncios {
   grid-area: anuncios;
+  background: #fafbfc;
+  padding: 30px;
+
+  display: grid;
+  align-content: start;
+  grid-gap: 30px;
 }
 
+/* FOOTER */
 .footer {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
   grid-area: footer;
+}
+
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
 }
